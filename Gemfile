@@ -42,5 +42,8 @@ gem 'thin'
 gem 'pg'
 
 group :development, :test do
-  gem 'debugger', group: [:development, :test]
+  gem 'debugger'
+  gem 'rspec'
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
 end

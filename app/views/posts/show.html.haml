@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @post.title
+%p
+  %b Post:
+  = @post.post
+%p
+  %b Published on:
+  = @post.published_on
+%p
+  %b Tags:
+  = @post.tags
+%p
+  %b Properties:
+  = @post.properties
+
+= link_to 'Edit', edit_post_path(@post)
+\|
+= link_to 'Back', posts_path

@@ -40,6 +40,9 @@ end
 
 gem 'thin'
 gem 'pg'
+gem 'redcarpet'
+gem 'haml'
+gem 'haml-rails'
 
 group :development, :test do
   gem 'debugger'

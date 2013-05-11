@@ -4,7 +4,7 @@ class CreatePosts < ActiveRecord::Migration
       t.string :title
       t.text :post
       t.datetime :published_on
-      t.string :tags
+      t.string :tags, array: true
       t.hstore :properties
 
       t.timestamps

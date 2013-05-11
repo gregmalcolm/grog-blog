@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.0.rc1'
+#gem 'rails', '4.0.0.rc1'
+gem 'rails', github: 'rails/rails'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0.rc1'
@@ -43,6 +44,7 @@ gem 'pg'
 gem 'redcarpet'
 gem 'haml'
 gem 'haml-rails'
+gem 'activerecord-postgres-hstore'
 
 group :development, :test do
   gem 'debugger'

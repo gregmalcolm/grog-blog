@@ -19,10 +19,9 @@ ActiveRecord::Schema.define(version: 20130511005500) do
 
   create_table "posts", force: true do |t|
     t.string   "title"
-    t.text     "post"
+    t.text     "article"
     t.datetime "published_on"
     t.string   "tags",         array: true
-    t.hstore   "properties"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

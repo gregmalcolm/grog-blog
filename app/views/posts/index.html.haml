@@ -1,27 +1,6 @@
-%h1 Listing posts
-
-%table
-  %tr
-    %th Title
-    %th Article
-    %th Published on
-    %th Tags
-    %th Properties
-    %th
-    %th
-    %th
-
+%div
   - @posts.each do |post|
-    %tr
-      %td= post.title
-      %td= post.article
-      %td= post.published_on
-      %td= post.tags
-      %td= post.properties
-      %td= link_to 'Show', post
-      %td= link_to 'Edit', edit_post_path(post)
-      %td= link_to 'Destroy', post, :method => :delete, :data => { :confirm => 'Are you sure?' }
-
-%br
-
-= link_to 'New Post', new_post_path
+    %div
+      %div= published_date(post.published_on)
+      %div= post.title
+    %div= post.article

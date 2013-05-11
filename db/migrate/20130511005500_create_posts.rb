@@ -2,7 +2,7 @@ class CreatePosts < ActiveRecord::Migration
   def change
     create_table :posts do |t|
       t.string :title
-      t.text :post
+      t.text :article
       t.datetime :published_on
       t.string :tags, array: true
       t.hstore :properties

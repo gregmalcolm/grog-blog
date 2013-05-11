@@ -3,7 +3,7 @@
 %table
   %tr
     %th Title
-    %th Post
+    %th Article
     %th Published on
     %th Tags
     %th Properties
@@ -14,7 +14,7 @@
   - @posts.each do |post|
     %tr
       %td= post.title
-      %td= post.post
+      %td= post.article
       %td= post.published_on
       %td= post.tags
       %td= post.properties

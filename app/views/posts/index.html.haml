@@ -1,6 +1,7 @@
-%div
+%div{id: "blog"}
   - @posts.each do |post|
-    %div
-      %div= published_date(post.published_on)
-      %div= post.title
-    %div= post.article
+    %div{id: "article-#{post.id}", class: "article"}
+      %div{class: "title-bar"}
+        %span{class: "title"}= post.title
+        %span{class: "published-on"}= published_date(post.published_on)
+      %div{class: "content"}= markdown(post.article)

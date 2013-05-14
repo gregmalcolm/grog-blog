@@ -45,6 +45,7 @@ gem 'redcarpet'
 gem 'haml'
 gem 'haml-rails'
 gem 'activerecord-postgres-hstore'
+gem 'devise', github: 'plataformatec/devise', branch: 'rails4'
 
 group :development, :test do
   gem 'debugger'

@@ -2,3 +2,12 @@ div#main {
   position: relative;
   padding: 48px 0;
 }
+
+div#main h1 { color: #b7e5f4; }
+div#main h2 { color: #b7e5f4; }
+div#main h3 { color: #b7e5f4; }
+div#main a:link { color: #edb72e; }
+div#main a:visited { color: #e77f00; }
+div#main a:hover { color: #fff; }
+div#main a:active { color: #bbb; }
+div#main label { color: #dceef4; }

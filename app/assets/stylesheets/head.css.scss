@@ -13,4 +13,12 @@ div#head div p {
   font-size: 20px;
   color: #b7e5f4;
   margin-left: 50px;
+  float: left;
+}
+
+div#head div#logout a {
+  margin-top: 16px;
+  float: right;
+  margin-right: 50px;
+  color: #dcf2f4;
 }

@@ -1,3 +1,6 @@
 %div{id: "head"}
   %div
     %p Greg Malcolm
+  %div{id: "logout"}
+    - if current_user
+      %a{href: logout_path} Logout

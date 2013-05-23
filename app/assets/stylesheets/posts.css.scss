@@ -3,27 +3,39 @@ div#blog {
   padding: 20px;
 
   background-color: #d0eaff;
-}
 
-div#blog div.article {
-  color: #036;
-  margin-bottom: 40px;
-}
+  div.article {
+    color: #036;
+    margin-bottom: 40px;
+  }
 
-div#blog .title-bar {
-  font-size: 20px;
-}
+  .title-bar {
+    font-size: 20px;
 
-div#blog .title {
-  color: #024;
-}
+    a {
+      text-decoration: none;
 
-div#blog .published-on {
-  color: #399;
-}
+      &:hover {
+        color: #024;
+        text-decoration: underline;
+      }
+    }
+  }
 
-div#blog .content {
-  margin-top: 6px;
-  font-size: 14px;
-}
+  .title{
+    color: #024;
+  }
 
+  .published-on {
+    color: #399;
+  }
+
+  .content {
+    margin-top: 6px;
+    font-size: 14px;
+  }
+
+  h1, h2, h3 {
+    color: #048;
+  }
+}

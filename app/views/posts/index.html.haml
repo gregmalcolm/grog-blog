@@ -2,6 +2,7 @@
   - @posts.each do |post|
     %div{id: "article-#{post.id}", class: "article"}
       %div{class: "title-bar"}
-        %span{class: "title"}= post.title
-        %span{class: "published-on"}= published_date(post.published_on)
+        %a{href: post_path(post)}
+          %span{class: "title"}= post.title
+          %span{class: "published-on"}= published_date(post.published_on)
       %div{class: "content"}= markdown(post.article)
